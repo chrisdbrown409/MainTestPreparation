@@ -2,20 +2,9 @@
 <html>
 <head>
   <Title> "Digital Badge Main Page" </Title>
-<head/>
 
-<DIV>
-  <HR>
-<p style="font-family: times, serif; font-size:15pt; font-style:normal;"> <!---in line comments--->
-Digital Badge Main Page<br /> <!---in line comments--->
-</p>
-  <p style="font-family: times, serif; font-size:09pt; font-style:normal"> 
-Digital badges (also known as ebadges, or singularly as ebadge) are a validated indicator of accomplishment, skill, quality or interest that can be earned in various learning environments.<br />
- </p>          
-</div>
 
-<DIV>
-  <!---Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible--->
+<!---Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible--->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .collapsible {
@@ -51,10 +40,64 @@ Digital badges (also known as ebadges, or singularly as ebadge) are a validated 
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #F8F9F9;
 }
-</style>
+  
+  
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+    }
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.w3schools.com/css/img_forest.jpg");
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+  
+  </style>
 </head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h3 style="font-size:25px">Digital Badge Main Page</h3>
+    <!---
+    <p>And I'm a Photographer</p>
+    <button>Hire me</button>
+    --->
+  </div>
+</div>
+
 <body>
 
   <h4>Digital Badge Tracking Platforms</h4><br />
@@ -107,9 +150,14 @@ for (i = 0; i < coll.length; i++) {
 <DIV\> 
 
 <DIV>
-<!---Footer--->
+
+  
+  
+  
+  
+  <Footer>
  <HR>
-  <p style="font-family: times, serif; font-size:09pt; font-style:normal; border:2px solid Black; background-color:#DBF9FC">
+  <p style="font-family: times, serif; font-size:09pt; font-style:normal; border:2px solid Black; background-color:#F2F3F4">
         <!---Color Ref: https://blog.hubspot.com/website/change-background-color-html--->
   GitHub Code:<a href="https://github.com/chrisdbrown409/MainDigitalBadgeTracking" target="_blank">https://github.com/chrisdbrown409/MainDigitalBadgeTracking</a><br />
   Home Page  :<a href="https://chrisdbrown409.github.io/MainPage/" target="_blank">https://chrisdbrown409.github.io/MainPage/</a><br />
@@ -121,5 +169,6 @@ for (i = 0; i < coll.length; i++) {
   <!--- https://chrisdbrown409.github.io/MainDigitalBadgeTracking/ --->
 <p\>
     <HR>
-</DIV> 
+</DIV>
+</Footer>  
 </html>
