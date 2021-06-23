@@ -8,28 +8,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 50%;
-  border: none;
-  text-align: Left;
-  outline: none;
-  font-size: 12px;
+  	background-color: #28B463;
+	margin-left: 40px;
+  	color: white;
+  	cursor: pointer;
+  	padding: 18px;
+  	width: 50%;
+  	border: none;
+  	text-align: Left;
+  	outline: none;
+  	font-size: 12px; 
+	font-family: times,serif;
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #1D8348;
 }
 
 .collapsible:after {
-  content: '\002B'; /* Unicode character for "plus" sign (+) */
-  color: white;
-  font-weight: bold;
-  float: Right;
-  margin-left: 5px;
-  font-size: 12px;
+  	content: '\002B'; /* Unicode character for "plus" sign (+) */
+  	margin-left: 40px;
+	color: white;
+  	font-weight: bold;
+  	float: Right;
+  	margin-left: 5px;
+  	font-size: 12px;
+	font-family: times,serif;
 }
 
 .active:after {
@@ -37,19 +41,21 @@
 }
 
 .content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #F8F9F9;
-   font-size: 12px;
+  	padding: 0 18px;
+	margin-left: 40px;
+  	max-height: 0;
+  	overflow: hidden;
+  	transition: max-height 0.2s ease-out;
+  	background-color: #F8F9F9;
+   	font-size: 12px;
+	font-family: times,serif;
 }
   
   
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: times,serif;
     }
 
 .hero-image {
@@ -71,14 +77,15 @@ body, html {
 }
 
 .hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
+  	border: none;
+  	outline: 0;
+  	display: inline-block;
+  	padding: 10px 25px;
+  	color: black;
+  	background-color: #ddd;
+  	text-align: center;
+  	cursor: pointer;
+	font-family: times,serif;
 }
 
 .hero-text button:hover {
@@ -87,7 +94,7 @@ body, html {
 }
 
   body {
-  font-family: "Lato", sans-serif;
+   font-family: times,serif;
 }
 
 .sidenav {
@@ -103,6 +110,7 @@ body, html {
   	background: White;
  	overflow-x: hidden;
   	padding: 8px 0;
+	font-family: times,serif;
 	
 }
 
@@ -137,9 +145,9 @@ body, html {
 	background-color: White;
 	color: blank;
 	text-align: left;
-  	font-family: times,serif;
   	font-size:8pt;
   	font-style:normal;
+	font-family: times,serif;
  }
   </style>
 </head>
@@ -178,11 +186,7 @@ body, html {
 Digital Badge Tracking Platforms<br />
 	</p>
 	<p style="font-family: times, serif; font-size:12pt; font-style:normal"> <!---in line comments--->
-	This page was built to document information regarding Digital Badges.<br />
-	This page was built to document information regarding Digital Badges.<br />
-	This page was built to document information regarding Digital Badges.<br />
-	This page was built to document information regarding Digital Badges.<br />
-	This page was built to document information regarding Digital Badges5.<br />
+	This page was built to Discuss Digital Badges.<br />
 	</p>
 </div>
 	
@@ -194,7 +198,7 @@ Digital Badge Tracking Platforms<br />
       </p>
     </div>
  
-
+<!---
 <button class="collapsible">International Software Testing Qualifications Board (ISTQB)</button>
 <div class="content">
   <p>Wikipedia: <a href="https://en.wikipedia.org/wiki/International_Software_Testing_Qualifications_Board" target="_blank">https://en.wikipedia.org/wiki/International_Software_Testing_Qualifications_Board</a><br />
@@ -214,8 +218,12 @@ Digital Badge Tracking Platforms<br />
   <p>Site: <br />
     Test.</p>
 </div>
+--->
 
-<script>
+	
+	
+	
+<script><!--- collapse script--->
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -253,11 +261,18 @@ for (i = 0; i < coll.length; i++) {
 </html>
    
   <!---
-  References:
-  	Page URL: https://chrisdbrown409.github.io/MainDigitalBadgeTracking/
+Page References:  
+	Page URL: https://chrisdbrown409.github.io/MainDigitalBadgeTracking/
+	Color Ref: https://blog.hubspot.com/website/change-background-color-html
+	HTML Layout Document: https://www.w3schools.com/html/html_layout.asp
+	Side Bar: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed2
+
+HTML References:
+  	Side Nav: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed
   	Color Ref: https://blog.hubspot.com/website/change-background-color-html
   	Email Ref: https://www.tutorialspoint.com/html/html_email_links.htm
-  	Collapse Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
-  	Side Bar: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed2
-	HTML Layout Document: https://www.w3schools.com/html/html_layout.asp
+ 	Collapse Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
+	Lists Ref: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered
+	Style Line: <p style="font-family: times, serif; font-size:12pt; font-style:normal">
+	hero image: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
   --->
