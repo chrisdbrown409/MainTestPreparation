@@ -98,9 +98,10 @@ body, html {
 }
 
 .sidenav {
-	/*height: 100%;*/
+	height: 100%;
+	text-align: Left;
   	width: 130px;
-  	position: fixed;
+  	position: absolute; /*will hold sidenav in place*/
 	/*position: -webkit-sticky;*/
   	/*position: sticky;*/
 	/*position: relative;*/
@@ -115,11 +116,13 @@ body, html {
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 12px;
-  color: #2196F3;
-  display: block;
+  	padding: 0px 8px 6px 16px; /*top,right,bottom, left */
+ 	text-decoration: none;
+	text-align: Left;
+  	font-size: 12px;
+  	color: #2196F3;
+  	display: block;
+	font-family: times,serif;
 }
 
 .sidenav a:hover {
@@ -138,8 +141,10 @@ body, html {
   .sidenav a {font-size: 12px;}
 }
  footer {
-	/*position: Fixed;*/
-	width: 100%;
+	/*position: Fixed; this makes it sticky always at the bottom of the page*/
+	margin-left: 40px;
+	/*width: 100%;*/
+	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
 	left: 0;
 	bottom: 0;
 	background-color: White;
@@ -152,6 +157,8 @@ body, html {
   </style>
 </head>
 
+
+	
 <body>
 
 <div class="hero-image">
@@ -263,17 +270,22 @@ for (i = 0; i < coll.length; i++) {
    
   <!---
 Page References:  
-	Page URL: https://chrisdbrown409.github.io/MainDigitalBadgeTracking/
-	Color Ref: https://blog.hubspot.com/website/change-background-color-html
-	HTML Layout Document: https://www.w3schools.com/html/html_layout.asp
-	Side Bar: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed2
+	1. Page URL: https://chrisdbrown409.github.io/MainDigitalBadgeTracking/
+	2. hero image: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
+	
 
-HTML References:
-  	Side Nav: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed
-  	Color Ref: https://blog.hubspot.com/website/change-background-color-html
-  	Email Ref: https://www.tutorialspoint.com/html/html_email_links.htm
- 	Collapse Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
-	Lists Ref: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered
-	Style Line: <p style="font-family: times, serif; font-size:12pt; font-style:normal">
-	hero image: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
+Site References:
+  	Site References:
+  	1. Collapse Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
+	2. Color Ref: https://blog.hubspot.com/website/change-background-color-html
+  	3. Color Picker: https://www.google.com/search?q=html+color+picker&rlz=1C1ONGR_enUS947US947&oq=html+color&aqs=chrome.2.35i39j69i57j0i433j0i20i263l2j0i433j0l3.6575j0j15&sourceid=chrome&ie=UTF-8
+	4. Email Ref: https://www.tutorialspoint.com/html/html_email_links.htm
+ 	5. hero image: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
+	6. HTML Layout Document: https://www.w3schools.com/html/html_layout.asp
+	7. Lists Ref: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered
+	8. Side Nav: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed	
+	9. Side Bar: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed2
+	10. Style Line: <p style="font-family: times, serif; font-size:12pt; font-style:normal">
+	
+	
   --->
