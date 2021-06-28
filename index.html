@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
 <head>
-  <Title> "Test Case Management" </Title>
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" 		content="width=device-width, initial-scale=1.0">
+	<meta name="description" 	content="Chris Brown | Quality Assurance"> <!---Web Searches--->
+	<Title>Chris Brown | Test Case Management</Title>
 <style>
 .collapsible {
  	background-color: #38c7d1;
 	height: 10%; /*reactive*/
-	margin-left: 40px;
+	/*margin-left: 14%; controlled by main class*/
   	color: white;
   	cursor: pointer;
   	/*padding: 18px; /*non-reactive*/
@@ -28,7 +29,7 @@
 
 .collapsible:after {
   	content: '\002B'; /* Unicode character for "plus" sign (+) */
-  	margin-left: 40px;
+  	/*margin-left: 14%; controlled by main class*/
 	color: white;
   	font-weight: bold;
   	float: Right;
@@ -77,7 +78,7 @@ body, html {
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
- 	 color: white;
+ 	color: white;
 }
 
 
@@ -93,20 +94,15 @@ body, html {
   	width: 12%; /*repsonsive:*15*/
 	top: 32%;
 	left: 1%;
-	/*width: 130px;*/
-	/*top: 220px;*
-  	/*left: 10px;*/
   	background: White;
   	overflow-x: hidden;
   	padding: 0px 0;
 	font-family: times,serif;
-	/*font-family: Arial, sans-serif;*/
 	font-size: 12px;
 }
 
 .sidenav a {
-  	/*padding: 0px 8px 6px 16px; /*top,right,bottom, left */
-	padding: 0% 0% .5% 1.0%; /*top,right,bottom, left */
+  	padding: 0% 0% .5% 1.0%; /*top,right,bottom, left */
  	text-decoration: none;
 	text-align: Left;
 	font-family: times,serif;
@@ -122,9 +118,11 @@ body, html {
 
 .main {
   	/*margin-left: 140px; /* Same width as the sidebar + left position in px */
-	margin-left: 11%; /* Same width as the sidebar + left position in px */ /*reponsive*/
-  	/*font-size: 28px; /* Increased text to enable scrolling */
-  	padding: 0px 10px;
+	padding: 0px 10px;
+	font-style:normal;
+	/*margin-left: 40px;*/
+	margin-left: 17%; /* Same width as the sidebar + left position in px */ /*reponsive*/
+	font-family: times,serif;
 }
 
 @media screen and (max-height: 450px) {
@@ -134,7 +132,7 @@ body, html {
  footer {
 	/*position: Fixed; this makes it sticky always at the bottom of the page*/
 	/*margin-left: 40px;*/
-	margin-left: 4%; /*reponsive*/
+	/*margin-left: 4%; controlled by main class*/
 	width: 100%;
 	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
 	left: 0;
@@ -161,15 +159,13 @@ body, html {
 <HR>
 
   <div class="sidenav">
-	<p style="font-family: times, serif; font-size:12pt; text-align: left; font-style:normal"> <U>Links</U><br />
-	<br />
-    	<a href="https://chrisdbrown409.github.io/MainPage/">  Home</a><br />
-    	<a href="https://github.com/chrisdbrown409" >  GIT Hub Root</a><br />
-    	<a href="https://github.com/chrisdbrown409/MainTestCaseManagement/blob/main/index.html" >  GIT Hub Repository</a><br />
-    	<a href = mailto:chrisdbrown409@gmail.com>  Email Author</a><br />
-    	<a href="https://www.linkedin.com/in/chrisbrown72/">  Author's Profile</a><br />
-	<!--- LinkedIn Profile: <a href="https://www.linkedin.com/in/chrisbrown72/" target="_blank">https://www.linkedin.com/in/chrisbrown72/</a><br /> --->
-	</p>
+		<p style="font-size:12pt;"><U>Links</U></p>
+    		<a href="https://chrisdbrown409.github.io/MainPage/">Home</a><br />
+    		<a href="https://github.com/chrisdbrown409">Github Root</a><br />
+    		<a href="https://github.com/chrisdbrown409/MainTestCaseManagement/blob/main/index.html" >Github Repository</a><br />
+    		<a href = mailto:chrisdbrown409@gmail.com>Email Author</a><br />
+    		<a href="https://www.linkedin.com/in/chrisbrown72/">Author's Profile</a><br />
+		</p>
       </div>
  
   
@@ -178,16 +174,15 @@ body, html {
 
 
 <div class="main">
-<div>
-	<h2 style="font-size:14pt; font-style:normal;margin-left: 40px;">Test Case Management</h2>
-	<p style="font-family: times,serif; font-size:12pt; font-style:normal;margin-left: 40px;"> 
-	Test Case Management tools help testers build,track and maintain test case information. There are many tools available for this purpose. The following tools are just a few examples of the options available.<br />
-	<br />
-	Each section expands and explores the topics within the section.
-	</p>
+	<div>
+		<h2 style="font-size:14pt;">Test Case Management</h2>
+		Test Case Management tools help testers build,track and maintain test case information. There are many tools available for this purpose. The following tools are just a few examples of the options available.<br />
+		<br />
+		Each section expands and explores the topics within the section.
+		</p>
 	</div>
 	
-
+<!---start buttons--->  
 <button class="collapsible">TestRail</button>
 	<div class="content">
 		<br />
